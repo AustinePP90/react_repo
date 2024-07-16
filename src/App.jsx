@@ -1,4 +1,5 @@
-import { ColoredMessage } from "./ColoredMessages";
+import { ColoredMessage } from "./components/ColoredMessages";
+import { ColoredMessage2 } from "./components/ColoredMessages2";
 
 export function App() {
   const divStyle = {
@@ -26,7 +27,7 @@ export function App() {
   };
 
   const aaa = () => {
-    alert("깡아지");
+    alert("장충동왕족발보쌈");
   };
 
   return (
@@ -41,19 +42,22 @@ export function App() {
       >
         안녕하세요
       </p>
-      <p style={pStyle}>반갑습니다</p>
-      <p style={pStyle}>어서오세요</p>
-      <p
-        style={{
-          backgroundColor: "#777",
-          color: "#fff",
-          paddingLeft: "0.5rem",
-        }}
-      >
-        편히쉬세요
-      </p>
-      <ColoredMessage color="red" message="안녕"></ColoredMessage>
-      <ColoredMessage color="blue" message="하이"></ColoredMessage>
+      <p style={pStyle}>편히쉬세요</p>
+      <ColoredMessage
+        color="#fff"
+        backgroundColor="#666"
+        message="안녕"
+        paddingLeft="0.7rem"
+      ></ColoredMessage>
+      <ColoredMessage
+        color="#fff"
+        backgroundColor="#555"
+        message="하이"
+        paddingLeft="0.7rem"
+      ></ColoredMessage>
+      <ColoredMessage2 color="#fff" backgroundColor="#444" paddingLeft="0.7rem">
+        내가돌아왔어요
+      </ColoredMessage2>
       <button style={btnStyle} onClick={aaa}>
         버튼
       </button>
