@@ -13,20 +13,19 @@ export function App() {
   };
 
   const btnStyle = {
-    // display: "block",
     backgroundColor: "#999",
     color: "#fff",
     border: "1px solid #ccc",
     borderRadius: "5px",
     boxShadow: "2px 3px 5px #999",
-    margin: "1rem",
+    margin: "0 1rem 1rem 1rem",
     padding: "0.5rem 1rem",
     fontSize: "1rem",
     fontWeight: "900",
     cursor: "pointer",
   };
 
-  const aaa = () => {
+  const alertWord = () => {
     alert("장충동왕족발보쌈");
   };
 
@@ -46,19 +45,19 @@ export function App() {
       <ColoredMessage
         color="#fff"
         backgroundColor="#666"
-        message="안녕"
+        message="장충동"
         paddingLeft="0.7rem"
       ></ColoredMessage>
       <ColoredMessage
         color="#fff"
         backgroundColor="#555"
-        message="하이"
+        message="왕족발"
         paddingLeft="0.7rem"
       ></ColoredMessage>
       <ColoredMessage2 color="#fff" backgroundColor="#444" paddingLeft="0.7rem">
         내가돌아왔어요
       </ColoredMessage2>
-      <button style={btnStyle} onClick={aaa}>
+      <button style={btnStyle} onClick={alertWord}>
         버튼
       </button>
     </div>
