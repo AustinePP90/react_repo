@@ -1,17 +1,5 @@
 import ReactDOM from "react-dom/client";
 import { App } from "./App";
-// const App = () => {
-//   return <p>안녕하세요</p>;
-// };
-
-// function App() {
-//   return (
-//     <>
-//       <p>안녕하세요</p>
-//       <p>반갑습니다.</p>
-//     </>
-//   );
-// }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
