@@ -1,17 +1,15 @@
-import { ColoredMessage } from "./components/ColoredMessages";
-import { ColoredMessage2 } from "./components/ColoredMessages2";
+import { ColoredMessage } from "./components/ColoredMessage";
+import { ColoredMessage2 } from "./components/ColoredMessage2";
 
 export function App() {
   const divStyle = {
     border: "1px solid #ccc",
   };
-
   const pStyle = {
     color: "#fff",
     backgroundColor: "#999",
     paddingLeft: "0.5rem",
   };
-
   const btnStyle = {
     backgroundColor: "#999",
     color: "#fff",
@@ -24,11 +22,9 @@ export function App() {
     fontWeight: "900",
     cursor: "pointer",
   };
-
   const alertWord = () => {
     alert("장충동왕족발보쌈");
   };
-
   return (
     <div style={divStyle}>
       {console.log("test")}
