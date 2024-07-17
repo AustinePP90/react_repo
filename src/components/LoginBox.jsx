@@ -1,3 +1,5 @@
+import "./LoginBox.css";
+
 export function LoginBox() {
   return (
     <body>
