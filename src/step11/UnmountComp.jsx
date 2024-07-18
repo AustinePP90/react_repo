@@ -2,10 +2,11 @@ import { useState, useEffect } from "react";
 
 export function UnmountComp() {
   const [mounted, setMounted] = useState(true);
+
   useEffect(() => {
-    console.log("컴포넌트 마운팅됨됨");
+    console.log("컴포넌트 마운팅");
     return () => {
-      console.log("컴포넌트 언마운팅 전전");
+      console.log("컴포넌트 언마운팅");
     };
   }, []);
 
