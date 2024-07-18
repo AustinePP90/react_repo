@@ -1,11 +1,12 @@
 import "./MemberList.css";
+// import "./MemberList2.css";
 import { useState } from "react";
 
 export function MemberList() {
   const [users, setUsers] = useState([
     { id: 1, name: "홍길동", age: 34, job: "무직" },
     { id: 2, name: "이순신", age: 54, job: "군인" },
-    { id: 3, name: "세종대왕", age: 44, job: "정치인" },
+    { id: 3, name: "임꺽정", age: 44, job: "대도" },
   ]);
 
   // 텍스트값용 변수
