@@ -1,3 +1,4 @@
+import { CommentBox } from "./CommentBox";
 import "./Comment.css";
 
 const comments = [
@@ -8,21 +9,9 @@ const comments = [
 export function App() {
   return (
     <>
-      {comments.map((comment) => {
+      {comments.map((comm) => {
         return (
-          <div className="wrapper">
-            <div className="image-container">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
-                className="image"
-                alt="Profile Image"
-              />
-            </div>
-            <div className="content-container">
-              <span className="name-text">{comment.name}</span>
-              <span className="comment-text">{comment.comment}</span>
-            </div>
-          </div>
+          <CommentBox name={comm.name} comment={comm.comment}></CommentBox>
         );
       })}
     </>
