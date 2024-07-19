@@ -1,9 +1,9 @@
-import { Gate2 } from "./Gate2";
+import { Gate3 } from "./Gate3";
 
 export function App() {
   return (
     <div>
-      <Gate2></Gate2>
+      <Gate3></Gate3>
     </div>
   );
 }

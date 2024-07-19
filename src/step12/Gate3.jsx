@@ -1,21 +1,11 @@
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
+import { useCounter } from "./useCounter";
 
 const MAX_CAPACITY = 10;
-export const Gate2 = () => {
+export const Gate3 = () => {
   const [isFull, setIsFull] = useState(false);
   const [isEmpty, setIsEmpty] = useState(true);
-  const [count, setCount] = useState(0);
-
-  const increaseCount = () => {
-    let _count = count + 1;
-    setCount(_count); // button을 누르면 count에 1씩 더함
-  };
-
-  const decreaseCount = () => {
-    let _count = count - 1;
-    setCount(_count); // button을 누르면 count에 1씩 더함
-  };
+  const [count, increaseCount, decreaseCount] = useCounter(0);
 
   useEffect(() => {
     setIsFull(count >= MAX_CAPACITY);
