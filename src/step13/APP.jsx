@@ -1,9 +1,9 @@
-import { ToggleButton2 } from "./ToggleButton2";
+import { ConfirmButton } from "./ConfirmButton";
 
-export function App() {
+export const App = () => {
   return (
     <div>
-      <ToggleButton2 />
+      <ConfirmButton />
     </div>
   );
-}
+};
