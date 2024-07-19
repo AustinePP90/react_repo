@@ -6,7 +6,7 @@ const comments = [
   { name: "홍길동", comment: "정말 감동의 서사시였음" },
 ];
 
-export function CommentBoxList() {
+export const CommentBoxList = () => {
   return (
     <>
       {comments.map((comm) => {
@@ -16,4 +16,4 @@ export function CommentBoxList() {
       })}
     </>
   );
-}
+};

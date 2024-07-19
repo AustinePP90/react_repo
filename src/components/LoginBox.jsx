@@ -1,6 +1,6 @@
 import "./LoginBox.css";
 
-export function LoginBox() {
+export const LoginBox = () => {
   return (
     <body>
       <div class="login-container">
@@ -15,4 +15,4 @@ export function LoginBox() {
       </div>
     </body>
   );
-}
+};

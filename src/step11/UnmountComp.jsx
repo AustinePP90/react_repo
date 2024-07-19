@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export function UnmountComp() {
+export const UnmountComp = () => {
   const [mounted, setMounted] = useState(true);
 
   useEffect(() => {
@@ -21,3 +21,13 @@ export function UnmountComp() {
       </div>
     );
 }
+
+// import React from 'react';
+// const MyComponent = () => {
+//   return (
+//     <div>
+//       <h1>Hello, World!</h1>
+//     </div>
+//   );
+// };
+// export default MyComponent;

@@ -1,4 +1,4 @@
-export function ColoredMessage2(props) {
+export const ColoredMessage2 = (props) => {
   const contentStyle = {
     color: props.color,
     backgroundColor: props.backgroundColor,
@@ -6,4 +6,4 @@ export function ColoredMessage2(props) {
     paddingLeft: props.paddingLeft,
   };
   return <p style={contentStyle}>{props.children}</p>;
-}
+};
