@@ -11,14 +11,14 @@ export const Gate = () => {
     let _count = count + 1;
     setCount(_count); // button을 누르면 count에 1씩 더함
     setIsFull(_count >= MAX_CAPACITY); // _count가 MAX_CAPACITY와 같아지면 true로 변함
-    setIsEmpty(_count <= 0); // _count가 0이 되면 fasle로 변함
+    setIsEmpty(_count <= 0); // _count가 0이 되기 전까지 true, 0이 되면 false로 변함
   };
 
   const decreaseCount = () => {
     let _count = count - 1;
     setCount(_count); // button을 누르면 count에 1씩 더함
     setIsFull(_count >= MAX_CAPACITY); // _count가 MAX_CAPACITY와 같아지면 true로 변함
-    setIsEmpty(_count <= 0); // _count가 0이 되면 fasle로 변함
+    setIsEmpty(_count <= 0); // _count가 0이 되기 전까지 true, 0이 되면 false로 변함
   };
 
   return (
