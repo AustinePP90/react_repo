@@ -3,9 +3,9 @@ import { useState } from "react";
 const MAX_CAPACITY = 10;
 
 export const Gate = () => {
+  const [count, setCount] = useState(0);
   const [isFull, setIsFull] = useState(false);
   const [isEmpty, setIsEmpty] = useState(true);
-  const [count, setCount] = useState(0);
 
   const increaseCount = () => {
     let _count = count + 1;
@@ -40,4 +40,42 @@ export const Gate = () => {
       </p>
     </div>
   );
+
+  // const maxCapacity = 5;
+  // const [number, setNumber] = useState(0);
+  // const [full, setFull] = useState(false);
+  // const [empty, setEmpty] = useState(true);
+
+  // const plusNumber = () => {
+  //   let updateNum = number + 1;
+  //   setNumber(updateNum);
+  //   setFull(updateNum >= maxCapacity);
+  //   setEmpty(updateNum <= 0);
+  // };
+
+  // const minusNumber = () => {
+  //   let updateNum = number - 1;
+  //   setNumber(updateNum);
+  //   setFull(updateNum >= maxCapacity);
+  //   setEmpty(updateNum <= 0);
+  // };
+
+  // return (
+  //   <div>
+  //     <p>총 {number}명 수용했습니다!</p>
+  //     <button disabled={full} onClick={plusNumber}>
+  //       들어가요
+  //     </button>
+  //     <button disabled={empty} onClick={minusNumber}>
+  //       나가요
+  //     </button>
+  //     <p>
+  //       {full
+  //         ? "정원 초과 정원 초과 경고!!!"
+  //         : empty
+  //         ? "인원 부족 인원 부족 경고!!!"
+  //         : null}
+  //     </p>
+  //   </div>
+  // );
 };

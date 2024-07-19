@@ -29,6 +29,10 @@ export const ToggleButton2 = (props) => {
     }
   };
 
+  // 이벤트핸들러에 매개변수 전달하기
+  // onClick={(event) => 함수명(event, 전달할 매개변수 값)}
+  // const 함수명 = (event, 전달받을 매개변수 값 이름) => {}
+    
   return (
     <div>
       <button onClick={(event) => func(event, 1)}>

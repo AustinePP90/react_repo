@@ -11,6 +11,7 @@ export const ToggleButton = () => {
   const func2 = () => {
     setOnAir2(!onAir2);
   };
+
   return (
     <div>
       <button onClick={func1}>

@@ -3,9 +3,9 @@ import { useEffect } from "react";
 
 const MAX_CAPACITY = 10;
 export const Gate2 = () => {
+  const [count, setCount] = useState(0);
   const [isFull, setIsFull] = useState(false);
   const [isEmpty, setIsEmpty] = useState(true);
-  const [count, setCount] = useState(0);
 
   const increaseCount = () => {
     let _count = count + 1;
@@ -21,6 +21,11 @@ export const Gate2 = () => {
     setIsFull(count >= MAX_CAPACITY);
     setIsEmpty(count <= 0);
   }, [count]);
+
+  // useEffect(() => {
+  //   setIsFull(count >= MAX_CAPACITY);
+  //   setIsEmpty(count <= 0);
+  // }, [count]);
 
   return (
     <div>

@@ -3,9 +3,9 @@ import { useCounter } from "./useCounter";
 
 const MAX_CAPACITY = 10;
 export const Gate3 = () => {
+  const [count, increaseCount, decreaseCount] = useCounter(0);
   const [isFull, setIsFull] = useState(false);
   const [isEmpty, setIsEmpty] = useState(true);
-  const [count, increaseCount, decreaseCount] = useCounter(0);
 
   useEffect(() => {
     setIsFull(count >= MAX_CAPACITY);
