@@ -1,8 +1,9 @@
 import { useState } from "react";
+import { useEffect } from "react";
 
 const MAX_CAPACITY = 10;
 
-export const Gate = () => {
+export const Gate2 = () => {
   const [isFull, setIsFull] = useState(false);
   const [isEmpty, setIsEmpty] = useState(true);
   const [count, setCount] = useState(0);
@@ -10,16 +11,17 @@ export const Gate = () => {
   const increaseCount = () => {
     let _count = count + 1;
     setCount(_count); // button을 누르면 count에 1씩 더함
-    setIsFull(_count >= MAX_CAPACITY); // _count가 MAX_CAPACITY와 같아지면 true로 변함
-    setIsEmpty(_count <= 0); // _count가 0이 되면 fasle로 변함
   };
 
   const decreaseCount = () => {
     let _count = count - 1;
     setCount(_count); // button을 누르면 count에 1씩 더함
-    setIsFull(_count >= MAX_CAPACITY); // _count가 MAX_CAPACITY와 같아지면 true로 변함
-    setIsEmpty(_count <= 0); // _count가 0이 되면 fasle로 변함
   };
+
+  useEffect(() => {
+    setIsFull(count >= MAX_CAPACITY);
+    setIsEmpty(count <= 0);
+  }, [count]);
 
   return (
     <div>
