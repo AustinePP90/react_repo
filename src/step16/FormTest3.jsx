@@ -20,16 +20,16 @@ export const FormTest3 = () => {
     <div>
       <form onSubmit={onSubmit}>
         <select id="menu" value={menus} onChange={onChange}>
-          <option value="apple">Apple</option>
-          <option value="banana">Banana</option>
-          <option value="grape">Grape</option>
-          <option value="melon">Melon</option>
+          <option value="🍎apple🍎">Apple🍎</option>
+          <option value="🍌banana🍌">Banana🍌</option>
+          <option value="🍇grape🍇">Grape🍇</option>
+          <option value="🍈melon🍈">Melon🍈</option>
         </select>
         <button type="submit">제출</button>
         {isSumitted ? (
           <p>당신이 고른 맛있는 과일은? {menus}</p>
         ) : (
-          <p>군침을 맛있게 흘리는 중...</p>
+          <p>군침을 맛있게 흘리는 중...🤤</p>
         )}
       </form>
     </div>
