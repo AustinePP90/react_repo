@@ -14,12 +14,12 @@ export const Search = () => {
     <div>
       {user ? (
         <div>
-          <h1>찾는 취미는? {query}</h1>
+          <h2>찾는 취미는? {query}</h2>
           <p>이름: {user.name}</p>
           <p>직업: {user.job}</p>
         </div>
       ) : (
-        <p>그런 사람 없습니다!</p>
+        <p>그런 사람 또 없습니다!</p>
       )}
     </div>
   );

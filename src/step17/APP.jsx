@@ -1,9 +1,9 @@
-import { RouterTest5 } from "./RouterTest5";
+import { RouterTest6 } from "./RouterTest6";
 
 export const App = () => {
   return (
     <div>
-      <RouterTest5></RouterTest5>
+      <RouterTest6></RouterTest6>
     </div>
   );
 };
