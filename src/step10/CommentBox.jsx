@@ -1,4 +1,4 @@
-export function CommentBox(comm) {
+export function CommentBox({ name, comment }) {
   return (
     <div className="wrapper">
       <div className="image-container">
@@ -9,8 +9,8 @@ export function CommentBox(comm) {
         />
       </div>
       <div className="content-container">
-        <span className="name-text">{comm.name}</span>
-        <span className="comment-text">{comm.comment}</span>
+        <span className="name-text">{name}</span>
+        <span className="comment-text">{comment}</span>
       </div>
     </div>
   );

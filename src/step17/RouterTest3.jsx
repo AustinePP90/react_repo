@@ -11,7 +11,7 @@ export const RouterTest3 = () => {
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About2 />}>
+        <Route path={"/about"} element={<About2 />}>
           <Route path="details" element={<AboutDetails />} />
         </Route>
       </Routes>
